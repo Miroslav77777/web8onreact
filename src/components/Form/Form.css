@@ -1,0 +1,110 @@
+.correct{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.correct img{
+    width: 50px;
+    height: 50px;
+}
+
+.success{
+    color: black;
+    justify-self: center;
+    padding: 3vw;
+    text-align: center;
+}
+
+form{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 3vw;
+    padding-top: .3vw;
+    max-height: 550px;
+    
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form h2{
+    font-size: 1.5vw;
+}
+
+form label{
+    font-size: 1.5vw;
+}
+
+form input{
+    height: 3vw;
+    padding-left: 0.8vw;
+    border-radius: 5px;
+    border: 1px solid rgba(212, 120, 222, 1);
+    font-size: 1vw;
+    font-family: Manrope;
+    background-color: white;
+}
+
+.image{
+    width: 30vw;
+}
+
+.send{
+    border: 1px solid rgba(212, 120, 222, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 3vw;
+    padding: .5vw;
+    font-size: 1vw;
+    font-family: Manrope;
+    color: black;
+    background-color: white;
+}
+
+.error{
+    color: red;
+}
+
+@media (max-width: 560px){
+    form h2{
+        font-size: 18px;
+    }
+
+    form{
+        overflow: hidden;
+    }
+    form input{
+        height: 50px;
+        font-size: 16px;
+        padding-left: 15px;
+    }
+    form label{
+        font-size: 16px;
+    }
+
+    .send{
+        height: 50px;
+        font-size: 16px;
+        border-radius: 6px;
+    }
+}
+
+@media (max-width: 840px){
+    .image{
+        width: 50vw;
+    }
+}
+
+@media (max-width: 560px){
+    .image{
+        width: 100%;
+    }
+}

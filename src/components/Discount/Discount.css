@@ -1,0 +1,75 @@
+.discount {
+    display: flex;
+    background-color: rgba(212, 120, 222, 1);
+    justify-content: space-between; 
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    align-items: center; 
+    padding: 10px;
+  }
+
+.textlink {
+  cursor: pointer;
+  text-align: center; 
+  margin: 0 auto;
+  font-weight: 600;
+  justify-content: center;
+  padding-left: 9.38vw;
+  background: linear-gradient(
+    to right,
+    #e6e6e6 20%,
+    #f0efef 30%,
+    #dbdbdb 70%,
+    #ffffff 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 1s ease-in-out infinite alternate;
+}
+  
+
+  
+.button-discount button {
+  padding: 0;
+  margin-left: 0;
+  margin-right: 30px;
+  color: white;
+  border: 1px solid white ;
+  border-radius: 6px;
+  padding: 3px;
+  align-self: center; 
+  font-weight: 600;
+}
+
+@keyframes textShine {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+      text-shadow: 0 0 10px rgb(255, 255, 255);
+  }
+}
+
+@media screen and (max-width:767px){
+  .button-discount button{
+    display: none;
+  }
+
+  .textlink{
+    padding-left: 0;
+    justify-self: center;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 3vw;
+  }
+
+  .discount{
+    padding: 10px 0;
+    height: 25px;
+  }
+}
